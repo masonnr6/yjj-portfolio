@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="杨金锦历年项目回顾与精选，展示2022至2026年的3D渲染与视觉设计项目。"
+    />
+    <meta name="theme-color" content="#d9dbe0" />
+    <title>杨金锦历年项目回顾与精选 — 3D Rendering Artist</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="assets/hero-plasma.js" defer></script>
+    <script src="projects.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#work">跳至作品 / Skip to work</a>
+
+    <header class="hero" id="top">
+      <div id="hero-plasma-root" class="hero__plasma" aria-hidden="true"></div>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <nav class="site-nav" aria-label="主要导航 / Primary navigation">
+        <a class="site-nav__brand" href="#top" data-site-brand>YJJ</a>
+        <div class="site-nav__links">
+          <a href="#about">关于 / About</a>
+          <a href="#work">作品 / Work</a>
+          <a href="#contact">感谢 / Thanks</a>
+        </div>
+      </nav>
+
+      <div class="hero__content">
+        <p class="eyebrow" data-site-role>3D RENDERING ARTIST</p>
+        <h1 data-site-title>
+          <span>历年项目</span>
+          <span>回顾与精选</span>
+        </h1>
+        <div class="hero__footer">
+          <p>视觉设计 · 渲染塑造 · 数字创意</p>
+          <p>Visual Design · Rendering Craft · Digital Art</p>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about">
+        <span>向下浏览 / Scroll</span>
+        <span aria-hidden="true">↓</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="intro section-shell" id="about">
+        <p class="section-index">01 / ABOUT</p>
+        <div class="intro__statement reveal">
+          <p>
+            3D渲染，应专注于塑造清晰、鲜明且富有生命力的视觉体验。
+          </p>
+          <p lang="en">
+            3D rendering should focus on shaping clear, distinctive, and vivid
+            visual experiences.
+          </p>
+        </div>
+        <div class="intro__meta">
+          <p data-site-location>BASED IN CHINA</p>
+          <p>AVAILABLE FOR SELECTED PROJECTS</p>
+        </div>
+      </section>
+
+      <section class="work" id="work" aria-labelledby="work-title">
+        <div class="work__header section-shell">
+          <p class="section-index">02 / SELECTED WORK</p>
+          <h2 id="work-title">历年项目<br /><span>Archive 2022—2026</span></h2>
+        </div>
+
+        <nav class="year-nav section-shell" aria-label="按年份浏览">
+          <div id="year-nav-list"></div>
+        </nav>
+
+        <div id="project-archive"></div>
+      </section>
+
+      <section class="contact section-shell" id="contact">
+        <p class="section-index">03 / THANK YOU</p>
+        <div class="contact__body reveal">
+          <div class="thanks__heading">
+            <p>感谢观看。</p>
+            <p lang="en">Thank you for viewing.</p>
+          </div>
+          <div class="thanks__footer">
+            <div class="qr-block">
+              <div class="qr-placeholder" aria-label="二维码预留位置">
+                <span>QR CODE</span>
+                <small>二维码预留位置</small>
+              </div>
+              <p>手机版</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a href="#top" data-site-brand>YJJ</a>
+      <p>© <span id="current-year"></span></p>
+      <p>DESIGNER PORTFOLIO</p>
+    </footer>
+
+    <dialog class="viewer" id="project-viewer" aria-labelledby="viewer-title">
+      <div class="viewer__chrome">
+        <div class="viewer__identity">
+          <p id="viewer-year"></p>
+          <h2 id="viewer-title"></h2>
+        </div>
+        <p class="viewer__count" aria-live="polite">
+          <span id="viewer-current">01</span> /
+          <span id="viewer-total">01</span>
+        </p>
+        <button class="viewer__close" type="button" aria-label="关闭项目">
+          <span>关闭 / Close</span>
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+
+      <div class="viewer__slides" id="viewer-slides"></div>
+
+      <div class="viewer__controls">
+        <button class="viewer__previous" type="button">
+          <span aria-hidden="true">←</span>
+          <span>上一个 / Previous</span>
+        </button>
+        <button class="viewer__next" type="button">
+          <span>下一个 / Next</span>
+          <span aria-hidden="true">→</span>
+        </button>
+      </div>
+    </dialog>
+
+    <noscript>
+      <p class="noscript">
+        此作品集需要 JavaScript 以展示项目。This portfolio requires JavaScript
+        to display the work.
+      </p>
+    </noscript>
+  </body>
+</html>
