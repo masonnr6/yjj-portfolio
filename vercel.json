@@ -1,0 +1,5 @@
+{
+  "installCommand": "echo \"No install needed for static portfolio\"",
+  "buildCommand": "npm run build",
+  "outputDirectory": "deploy"
+}

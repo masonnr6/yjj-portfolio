@@ -1,0 +1,22 @@
+{
+  "name": "yjj-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node ./node_modules/vite/bin/vite.js --host 127.0.0.1",
+    "build:plasma": "node tools/build_plasma_bundle.cjs",
+    "build": "node tools/build_static_deploy.cjs",
+    "build:vite": "node ./node_modules/vite/bin/vite.js build && node tools/sync_deploy.cjs",
+    "preview": "node ./node_modules/vite/bin/vite.js preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.4.0",
+    "ogl": "^1.0.11",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "three": "^0.181.2",
+    "vite": "^7.3.0"
+  }
+}
